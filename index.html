@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="conteudo">
+        <div class="formulario">
+            <h1>Formulário</h1>
+            <label >Nome:</label>
+            <input type="text" id="name"/>
+
+            <label >Data de Nascimento:</label>
+            <input type="date" id="date" />
+
+            <label >Escolaridade:</label>
+            <select id="school">
+                <option value="Ensino Medio Completo">Ensino Medio Completo</option>
+                <option value="Ensino Medio Incompleto">Ensino Medio Incompleto</option>
+                <option value="Ensino Superior">Ensino Superior</option>
+            </select>
+
+            <label >Vaga de interesse:</label>
+            <select id="vaga">
+                <option value="Estágio">Estágio</option>
+                <option value="Trainee">Trainee</option>
+                <option value="Junior">Junior</option>
+            </select>
+
+            <button id="enviar" onclick="getNewRow()">Enviar</button>
+        </div>
+
+        <div class="tabela">
+            <h1>Tabela de Dados</h1>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Data de Nascimento</th>
+                        <th>Escolaridade</th>
+                        <th>Vaga de Interesse</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
